@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Tasks</h1>
+    </header>
+    <main>
+        <section class="task" id="task1">
+            <div class="task-header" onclick="toggleAnswer('answer1')">
+                <h2>1. Why is it called JavaScript?</h2>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div id="answer1" class="answer">
+                <p>JavaScript was originally named Mocha, then it was renamed to LiveScript, and finally, it became JavaScript. The inclusion of "Java" in its name was largely a marketing decision by Netscape in the mid-90s to capitalize on the popularity of Java. However, JavaScript and Java are entirely different languages with different syntax and purposes.</p>
+            </div>
+        </section>
+        <section class="task" id="task2">
+            <div class="task-header" onclick="toggleAnswer('answer2')">
+                <h2>2. JavaScript Animation Examples</h2>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div id="answer2" class="answer">
+                <!-- Animation examples will be added dynamically using JavaScript -->
+            </div>
+        </section>
+        <section class="task" id="task3">
+            <div class="task-header" onclick="toggleAnswer('answer3')">
+                <h2>3. Disabling JavaScript and Browser Features</h2>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <div id="answer3" class="answer">
+                <h3>a) How to Disable JavaScript in Browsers?</h3>
+                <p>JavaScript can be disabled in most browsers through the browser settings. Typically, you can find this option in the browser's settings menu under "Content settings" or "Security settings".</p>
+                <h3>b) How to Disable Right Click?</h3>
+                <p>To disable right-clicking on a webpage, you can use JavaScript:</p>
+                <pre><code>document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});</code></pre>
+                <h3>c) How to Disable Inspect Element?</h3>
+                <p>It's not possible to entirely disable the browser's developer tools, including the inspect element feature. However, you can make it harder for casual users to access it by adding an event listener to the keydown event:</p>
+                <pre><code>document.addEventListener('keydown', function(event) {
+    if (event.keyCode == 123) { // 123 is the keycode for F12
+        event.preventDefault();
+    }
+});</code></pre>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

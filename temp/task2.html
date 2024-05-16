@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="task2style.css">
+    <link rel="js" href="task2.js">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <h2>Enter your personal information</h2>
+            
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter yourfull name">
+
+            <span class="warning1">
+               please fill the correct info 
+            </span>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="abcd@gmail.com">
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" class="phone" placeholder="123-45-678" required>
+            
+            <span class="warning2">
+                Enter the 10 digit phone number
+             </span>
+            
+            <label for="gender">Gender</label>
+            <select type="gender" id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="courses">Courses</label>
+            <select type="courses" id="courses" name="courses" required>
+                <option value="">Select Course</option>
+                <option value="PyQT5">PyQT5</option>
+                <option value="AWS">AWS</option>
+                <option value="Rust">Rust</option>
+                <option value="GoLang">GoLang</option>
+            </select>
+            
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+<script>document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    const phoneInput = document.getElementById('phone');
+    const warning2 = document.querySelector('.warning2');
+
+    form.addEventListener('submit', function(event) {
+        const phoneValue = phoneInput.value;
+        const phoneNum = phoneValue.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+
+        if (phoneNum.length !== 10) {
+            warning2.style.display = 'block';
+            warning2.textContent = 'Enter a 10 digit phone number';
+            event.preventDefault(); // Prevent form submission
+        } else {
+            warning2.style.display = 'none';
+            alert("details are submitted successflly!")
+        }
+    });
+});</script>
+</html>
