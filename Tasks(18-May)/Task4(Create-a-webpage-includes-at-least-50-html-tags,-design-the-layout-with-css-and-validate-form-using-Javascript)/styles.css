@@ -1,0 +1,276 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #1f3b4d 0%, #1de9b6 100%);
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero button {
+    background: #1de9b6;
+    color: #1f3b4d;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero button:hover {
+    background: #17c3a2;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+}
+
+/* About section */
+#about {
+    padding: 50px 0;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Projects section */
+#projects {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+#projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+    color: #ffffff;
+}
+
+.project p {
+    padding: 20px;
+}
+
+.project a {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    background: #1a2a6c;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.project a:hover {
+    background: #4e4376;
+}
+
+/* Skills section */
+#skills {
+    padding: 50px 0;
+}
+
+#skills h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#skills li {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact section */
+#contact {
+    padding: 50px 0;
+    background: #ffffff;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background: linear-gradient(135deg, #fc00ff 0%, #00dbde 100%);
+    color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#contactForm button:hover {
+    background: linear-gradient(135deg, #d800ff 0%, #00bede 100%);
+}
+
+/* HTML Tags section */
+#html-tags {
+    padding: 50px 0;
+}
+
+#html-tags h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tag {
+    background: #f0f0f0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+/* Footer */
+footer {
+    background: #1f3b4d;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social-links li {
+    margin: 0 10px;
+}
+
+footer .social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #1de9b6;
+}
