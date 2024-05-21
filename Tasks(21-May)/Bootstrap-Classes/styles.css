@@ -1,0 +1,45 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(135deg, #2e3a59 0%, #1b2735 100%);
+    color: #ffffff;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+}
+
+.bg-gradient-secondary {
+    background: linear-gradient(135deg, #3a3d40 0%, #181719 100%);
+}
+
+.card {
+    background: #2b2b2b;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+code {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: #ff6a00;
+}

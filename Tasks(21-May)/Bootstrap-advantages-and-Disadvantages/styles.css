@@ -1,0 +1,47 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: #222831;
+    color: #eeeeee;
+}
+
+.bg-gradient-header {
+    background: linear-gradient(135deg, #00adb5 0%, #393e46 100%);
+}
+
+.bg-gradient-advantages {
+    background: linear-gradient(135deg, #00adb5 0%, #007f7f 100%);
+}
+
+.bg-gradient-disadvantages {
+    background: linear-gradient(135deg, #ff5722 0%, #d9534f 100%);
+}
+
+.card {
+    background: #393e46;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background: #00adb5;
+    color: #eeeeee;
+}
