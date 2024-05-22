@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+        }
+        .login-form {
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+        .login-form h2 {
+            margin-bottom: 1em;
+            color: #333;
+            text-align: center;
+        }
+        .login-form label {
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+        .login-form .password-container {
+            position: relative;
+        }
+        .login-form input {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 2em);
+        }
+        .login-form .password-container input {
+            width: calc(100% - 3em);
+        }
+        .login-form .password-container i {
+            position: absolute;
+            top: 50%;
+            right: 0.5em;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #333;
+        }
+        .login-form button {
+            padding: 0.7em;
+            background-color: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <form class="login-form" onsubmit="event.preventDefault(); SubmitInfo();">
+        <h2>Login to see and manage your assets</h2>
+        <label for="username">Enter username</label>
+        <input type="text" id="username" placeholder="Enter username" required>
+        <label for="password">Enter password</label>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="Enter password" required>
+            <i class="fas fa-eye" id="togglePassword" onclick="togglePasswordVisibility()"></i>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function SubmitInfo() {
+            window.location.href = 'assets.html';
+        }
+
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById('password');
+            const toggleIcon = document.getElementById('togglePassword');
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordField.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+    </script>
+</body>
+</html>
