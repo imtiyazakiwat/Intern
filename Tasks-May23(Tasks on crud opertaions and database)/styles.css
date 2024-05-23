@@ -1,0 +1,72 @@
+/* styles.css */
+body {
+    background: linear-gradient(to right, #232526, #414345); /* Dark gradient background */
+    color: #fff; /* Light text for better contrast */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #ff6f61; /* Bright color for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding text shadow for a glowing effect */
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 30px;
+}
+
+.gradient-card {
+    background: linear-gradient(135deg, #ff6f61, #de4d41);
+    color: white;
+    margin: 15px 0;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gradient-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 25px;
+    text-align: left;
+}
+
+.list-unstyled {
+    padding: 0;
+    list-style-type: none;
+}
+
+.list-unstyled li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        padding: 20px;
+    }
+    .card-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-body {
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 1.25rem;
+    }
+}
