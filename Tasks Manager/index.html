@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <div class="form-container">
+            <input type="text" id="main-topic" placeholder="Main Topic">
+            <input type="text" id="sub-topic" placeholder="Sub Topic">
+            <input type="date" id="target-date">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div id="tasks-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Main Topic</th>
+                        <th>Sub Topic</th>
+                        <th>Target Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tasks-table-body">
+                    <!-- Tasks will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
